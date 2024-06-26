@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navlist{
+    display: flex;
+    gap: 70px;
+    font-size: larger;
+    list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.company img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-right: 700px;
+    margin-left: 20px;
+
+}
+
+.container1 nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 70px;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.img-container{
+    background-image: url("bgimg.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 50%;
+    height: 500px;
+    font-size: x-large;
+    font: bold;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+legend{
+    text-align: center;
+    font-size: x-large;
+}
+.fieldset{
+    z-index: 1;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+button{
+    width: 80px;
+    height: 40px;
+    font-size: large;
+    background-color: transparent;
+    border-radius: 4px;
+    margin-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.inp::placeholder{
+    color: black;
+}
+
+li {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+li:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.icon:visited { 
+    color: black;
+    text-decoration-line: none;
+}
+
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px black;
+    
+}
+
+.container3{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+}
+
+p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger ;
+    padding: 25px;
+    margin: 25px;
+    color: rgb(213, 213, 213);
+}
+
+.heading{
+    font-size: xx-large;
+    font: bold;
+    text-decoration: underline  ;
+    color: rgb(213, 213, 213);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.img{
+    height: 300px;
+    width: 480px;
+    margin-right: 40px;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+    position: relative; 
+}
+
+.img:hover{
+    transform: scale(1.1); 
+}
+
+.container4{
+    padding: 30px;
+    background-color: rgb(44, 44, 44);
+    padding-bottom: 70px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(213, 213, 213);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    height: 550px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    margin-bottom: 40px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card-text {
+    margin-top: 2px;
+    margin-bottom: 0;
+    color: #666;
+    text-align: center;
+}
+
+.card-price {
+    font-size: 1.2em;
+    color: #e67e22;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card-button:hover {
+    background-color: #2980b9;
+}
+
+.contact-sec{
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.details{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: larger;
+    color: rgb(213, 213, 213);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+    color: rgb(213, 213, 213);
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+@media (max-width: 1500px){
+    .company img {
+        margin-right: 450px;
+    }
+}
+
+@media (max-width: 1400px){
+    .company img {
+        margin-right: 400px;
+    }
+}
+
+@media (max-width: 1300px){
+    .company img {
+        margin-right: 350px;
+    }
+    .container3{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px){
+    .company img {
+        margin-right: 300px;
+    }
+    .container3{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1100px){
+    .company img {
+        margin-right: 250px;
+    }
+    .heading{
+        font-size: x-large;
+    }
+    html{
+        font-size: 60%;
+    }
+    .img{
+        width: 290px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px){
+    .company img {
+        margin-right: 150px;
+    }
+    html{
+        font-size: 70%;
+    }
+    .container1{
+        padding: 1.5rem 2rem;
+    }
+    .img{
+        width: 270px;
+        height: 180px;
+    }
+    .container3{
+        flex-direction: column;
+    }
+    .heading{
+        font-size: large;
+    }
+}
+
+
+
+@media (max-width: 850px){
+    .company img {
+        width: 100px;
+        height: 100px;
+        margin-right: 100px;
+    }
+    .img{
+        width: 240px;
+        height: 150px;
+    }
+    .container3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 300px;
+        height: 500px;
+    }
+    .fieldset{
+        width: 30%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 768px){
+    .container1 .navlist{
+        right: 2rem;
+    }
+    .company img {
+        margin-right: 50px;
+    }
+    .card{
+        width: 250px;
+        height: 460px;
+    }
+}
+
+@media (max-width: 450px){
+    html {
+        font-size: 50%;
+    }
+    .navlist{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 400px){
+    .img{
+        margin-top: 15px;
+    }
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
