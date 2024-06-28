@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <?php
+        include("contact.php");
+    ?>
+
     <div class="main-container">
         <div class="img-container" id="img-container">
             <div class="container1">
@@ -30,7 +34,7 @@
             <div class="container2">
                 <fieldset class="fieldset" id="fieldset">
                     <legend>PLAN YOUR TRIP TO SRI LANKA</legend>
-                    <form id="form">
+                    <form id="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
                         <div>
                             <label for="Name">Name: &nbsp;</label>
                             <input type="text" id="Name" name="Name" class="inp" placeholder="Your name">
@@ -50,7 +54,7 @@
         </div>
 
         <div class="container3" id="container3">
-            <div class="content">
+            <div class="content"> 
                 <p class="heading">ABOUT</p>
                 <p>
                     Nestled like a teardrop in the Indian Ocean, Sri Lanka beckons travelers with its unparalleled blend
@@ -87,7 +91,7 @@
         <div class="container4">
             <p class="heading" id="packages">Our Packages</p>
             <div class="cards">
-                <div class="card">
+                <div class="card animate">
                     <img src="https://via.placeholder.com/300x200" alt="Travel Destination">
                     <div class="card-body">
                         <h2 class="card-title">Place</h2>
@@ -97,7 +101,7 @@
                         <a href="#" class="card-button">Book Now</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate">
                     <img src="https://via.placeholder.com/300x200" alt="Travel Destination">
                     <div class="card-body">
                         <h2 class="card-title">Place</h2>
@@ -107,7 +111,7 @@
                         <a href="#" class="card-button">Book Now</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate">
                     <img src="https://via.placeholder.com/300x200" alt="Travel Destination">
                     <div class="card-body">
                         <h2 class="card-title">Place</h2>
@@ -117,7 +121,7 @@
                         <a href="#" class="card-button">Book Now</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate">
                     <img src="https://via.placeholder.com/300x200" alt="Travel Destination">
                     <div class="card-body">
                         <h2 class="card-title">Place</h2>
@@ -127,7 +131,7 @@
                         <a href="#" class="card-button">Book Now</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate">
                     <img src="https://via.placeholder.com/300x200" alt="Travel Destination">
                     <div class="card-body">
                         <h2 class="card-title">Place</h2>
@@ -137,7 +141,7 @@
                         <a href="#" class="card-button">Book Now</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate">
                     <img src="https://via.placeholder.com/300x200" alt="Travel Destination">
                     <div class="card-body">
                         <h2 class="card-title">Place</h2>
@@ -147,7 +151,7 @@
                         <a href="#" class="card-button">Book Now</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate">
                     <img src="https://via.placeholder.com/300x200" alt="Travel Destination">
                     <div class="card-body">
                         <h2 class="card-title">Place</h2>
@@ -157,7 +161,7 @@
                         <a href="#" class="card-button">Book Now</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate">
                     <img src="https://via.placeholder.com/300x200" alt="Travel Destination">
                     <div class="card-body">
                         <h2 class="card-title">Place</h2>

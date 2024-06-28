@@ -29,4 +29,27 @@ btn.addEventListener("click", function(event) {
 
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedElements = document.querySelectorAll('.animate');
+
+    function checkVisibility() {
+        const windowHeight = window.innerHeight;
+        animatedElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            if (elementTop < windowHeight - 100) {
+                element.classList.add('visible');
+            } else {
+                element.classList.remove('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+
+    checkVisibility(); 
+});
+
+
+
 
